@@ -11,7 +11,7 @@ Simple wrapper for [morgan](https://github.com/expressjs/morgan) package with so
 
 ## Installation
 
-`npm i github:Pashted/express-logger#master`
+`npm i github:Pashted/express-logger#v0.0.1`
 
 ## Usage
 
