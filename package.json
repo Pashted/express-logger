@@ -1,0 +1,26 @@
+{
+  "name": "express-logger",
+  "version": "0.0.1",
+  "description": "Middleware logger for Express with predefined settings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/Pashted/express-logger/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Pashted/express-logger.git"
+  },
+  "keywords": [
+    "express",
+    "morgan",
+    "logger"
+  ],
+  "type": "commonjs",
+  "author": "Pashted",
+  "license": "ISC",
+  "dependencies": {
+    "dateformat": "~4",
+    "morgan": "~1.10.0"
+  }
+}
