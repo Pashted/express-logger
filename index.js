@@ -17,7 +17,7 @@ module.exports = (app, utilOptions) => {
             maxArrayLength: 10,
             breakLength:    80,
         };
-    } else if (utilOptions === 'object') {
+    } else if (typeof utilOptions === 'object') {
         options = utilOptions;
     }
 

@@ -1,6 +1,6 @@
 {
   "name": "express-logger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Middleware logger for Express with predefined settings",
   "main": "index.js",
   "scripts": {
