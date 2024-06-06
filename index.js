@@ -1,6 +1,5 @@
-const util = require('util');
+const util = require('node:util');
 const logger = require('morgan');
-const dateFormat = require('dateformat');
 const isDevMode = process.env.NODE_ENV === 'development';
 
 /**
@@ -21,7 +20,11 @@ module.exports = (app, utilOptions) => {
         options = utilOptions;
     }
 
-    logger.token('datetime', () => dateFormat('yyyy-mm-dd HH:MM:ss.l'));
+    // yyyy-MM-dd HH:mm:ss.SSS
+    logger.token('datetime', () => {
+        let dt = new Date();
+        return `${dt.toLocaleString('sv')}.${dt.toLocaleString('sv', {fractionalSecondDigits: 3})}`;
+    });
     logger.token('baseUrl', req => req._parsedUrl?.pathname || req.baseUrl || req.originalUrl || req.url);
     logger.token('data', req =>
         req.method === 'GET'
