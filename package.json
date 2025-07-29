@@ -1,6 +1,6 @@
 {
   "name": "express-logger",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Middleware logger for Express with predefined settings",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,6 @@
   "author": "Pashted",
   "license": "ISC",
   "dependencies": {
-    "morgan": "~1.10.0"
+    "morgan": "~1.10.1"
   }
 }
